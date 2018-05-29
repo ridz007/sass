@@ -1,0 +1,79 @@
+<!--DOCTYPE HTML-->
+<html>
+
+<head>
+  <title>
+    My accelerate task
+  </title>
+  <meta name="viewport" content="width: device-width, initial-scale=1">
+  <meta name="author" content="Ritu Upadhyay">
+  <link rel="stylesheet" type="text/css" href="output.css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+  <!--HEADER STARTS-->
+  <div class="headerBlock">
+    <div class="headerBlock__generalInfo">
+      <span class="headerBlock__hamburger--hidden" onclick="showMenuItems()">
+        <i class="fas fa-align-justify"></i>
+      </span>
+      <span class="headerBlock__generalInfo--companyFont">Company |
+        <sup>&reg;</sup>
+      </span>
+      <span class="headerBlock__generalInfo--websiteFont">Accelerate</span>
+    </div>
+    <div class="headerBlock__userInfo">
+      <span class="headerBlock__userInfo--welcomeFont">Welcome Name Surname </span>
+      <img src="assets/user.jpg" class="headerBlock__userInfo__userImage">
+      <span class="headerBlock__userInfo__notificationImage">
+        <i class="fa fa-bell" aria-hidden="true"></i>
+      </span>
+    </div>
+    <div class="headerBlock__extraInfo">
+      <span class="headerBlock__extraInfo__conversationImage">
+        <i class="fal fa-comment-alt"></i>
+      </span>
+      <span class="headerBlock__extraInfo__textImage">
+        <i class="fas fa-file-alt"></i>
+      </span>
+      <span class="headerBlock__extraInfo__dotsImage">
+        <i class="fas fa-ellipsis-v"></i>
+      </span>
+    </div>
+  </div>
+  <!--HEADER ENDS-->
+  <!--SUB HEADER STARTS-->
+  <div class="subHeaderBlock">
+    <div class="leftSubHeader">
+      <span>Home</span>
+      <span>All work</span>
+      <span>Have your Say ! </span>
+      <span>my score</span>
+    </div>
+    <div class="rightSubHeader">how it works
+    </div>
+  </div>
+  <!--SUB HEADER ENDS-->
+
+  <!--SCRIPT  STARTS-->
+  <script>
+    function showMenuItems() {
+      var x = document.getElementsByClassName("leftSubHeader")[0];
+      if (x.className == "leftSubHeader") {
+        x.className += " mobileView";
+      } else {
+        x.className = "leftSubHeader";
+      }
+    }
+  </script>
+
+  <!--SCRIPT  ENDS-->
+
+</body>
+
+</html>

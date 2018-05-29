@@ -1,0 +1,68 @@
+p {
+  color: yellow; }
+
+.headerBlock__hamburger--hidden {
+  display: none; }
+
+body {
+  background: pink;
+  margin: 0px; }
+
+.headerBlock {
+  background: #333942;
+  color: white;
+  display: flex;
+  font-family: "Lucida Console";
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  height: 100px; }
+
+.headerBlock > :nth-child(even) {
+  flex-grow: 5;
+  text-align: right; }
+
+.headerBlock > :nth-child(odd) {
+  flex-grow: 1; }
+
+.headerBlock__extraInfo span {
+  padding-right: 1em; }
+
+.headerBlock__userInfo__userImage {
+  padding-left: 1px;
+  padding-right: 1px;
+  border-radius: 50%;
+  width: 27px;
+  height: 20px;
+  display: inline-block; }
+
+.subHeaderBlock {
+  background: gainsboro;
+  display: flex;
+  text-transform: uppercase;
+  height: 30px;
+  align-items: center; }
+
+.subHeaderBlock :nth-child(odd) {
+  flex-grow: 10;
+  margin-left: 10px;
+  padding-right: 10px; }
+
+.subHeaderBlock :nth-child(even) {
+  flex-grow: 1; }
+
+ul {
+  list-style: none; }
+
+/*Media queries*/
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue; }
+  .headerBlock__extraInfo, .subHeaderBlock {
+    display: none; }
+  .headerBlock__hamburger--hidden {
+    display: inline; }
+  .leftSubHeader.mobileView {
+    position: relative;
+    display: block;
+    text-align: left; } }
